@@ -282,9 +282,9 @@ In this example, we have one property, one computed property. And we display the
 
 After initialization, we have one reactive property and two watchers subscribe to it. Notice the view doesn't subscribe to the computed property because the computed property is a watcher, not a reactive property.
 
-Now we change the value of `name`, we know that the computed property and view will both update. But would them update in the correct order? If view updates first, it will show the old computed property value.
+Now we change the value of `name`, we know that the computed property and view will both update. But would they update in the correct order? If view updates first, it will show the old computed property value.
 
-How Vue solves this problem?
+So how does Vue solves this problem?
 
 Let's simulate the updating process.
 
